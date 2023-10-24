@@ -86,10 +86,143 @@ p {
 	margin: 0 0 .5rem 0;
 }
 
+
 .anim {
+	background-image: url(../img/room.webp);
+	background-size: cover;
 	width: 500px;
-	height: 300px;
+	height: 325px;
 	border: solid #000 1px;
 	float:right;
 	margin: 0 0 1rem 1rem;
+	overflow: hidden;	
+}
+.anim__roomba-angle {
+	position: relative;
+	top: 250px;
+	left: -100px;
+	animation: bot-photo 6s ease 2.7s forwards;
+}
+.anim__headline{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: greenyellow;
+	position: relative;
+	top: -25px;
+	opacity: 0;
+	animation: h2-tag 6s ease .1s forwards;
+}
+.anim__logo{
+	position: relative;
+	top: -250px;
+	opacity: 0;
+	animation: logo-tag 6s ease .1s forwards;
+}
+.anim__tag{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	font-style: italic;
+	color: brown;
+	position: relative;
+	top: -140px;
+	left: 125px;
+	opacity: 100;
+	animation: h3-tag 6s ease .1s forwards;
+}
+
+@keyframes h2-tag{
+	10%{
+		top: 0px;
+		opacity: 25%;
+	}
+	15%{
+		top: 10px;
+		opacity: 50%;
+	}
+	25%{
+		top: 15px;
+		opacity: 75%;
+	}
+	100%{
+		top: 25px;
+		opacity: 100%;
+	}
+}
+@keyframes logo-tag{
+	10%{
+		top: -225px;
+		opacity: 25%;
+	}
+	15%{
+		top: -215px;
+		opacity: 50%;
+	}
+	25%{
+		top: -210px;
+		opacity: 75%;
+	}
+	100%{
+		top: -200px;
+		opacity: 100%;
+	}
+}
+@keyframes h3-tag{
+	10%{
+		top: -150px;
+		opacity: 100%;
+	}
+	15%{
+		top: -160px;
+		opacity: 100%;
+	}
+	25%{
+		top: -170px;
+		opacity: 100%;
+	}
+	50%{
+		top: -170px;
+		opacity: 65%;
+	}
+	75%{
+		top: -170px;
+		opacity: 25%;
+	}
+	100%{
+		top: -170px;
+		opacity: 0%;
+	}
+}
+@keyframes bot-photo{
+	10%{
+		top: 250px;
+		left: -50px;
+		opacity: 100%;
+	}
+	15%{
+		top: 250px;
+		left: 0px;
+		opacity: 100%;
+	}
+	25%{
+		top: 250px;
+		left: 75px;
+		opacity: 100%;
+	}
+	50%{
+		top: 250px;
+		left: 150px;
+		opacity: 100%;
+	}
+	75%{
+		top: 250px;
+		left: 225px;
+		opacity: 100%;
+	}
+	100%{
+		top: 250px;
+		left: 400px;
+		opacity: 100%;
+	}
 }
